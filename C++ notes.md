@@ -119,3 +119,7 @@ remaining elements.
 number of subsequences : 2^n . 
 
 Every subarray is subsequence but every subsequence is not subarray. 
+
+
+## Two Dimensoinal Array
+Declaration = datatype_declaratioin arr[n][m];
