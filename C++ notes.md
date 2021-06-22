@@ -123,3 +123,8 @@ Every subarray is subsequence but every subsequence is not subarray.
 
 ## Two Dimensoinal Array
 Declaration = datatype_declaratioin arr[n][m];
+
+## Character Array
+input : cin >> arr_name
+output : cout << arr_name
+to access perticular element: arr_name[index]
