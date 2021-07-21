@@ -91,7 +91,7 @@ time complexity oF an algorithm quantifies the amount of the time taken by a pro
 
 
 ## space complexity
-space complexity of an algorithm quantiies the amount of the time taken by a progea to run as a function of length of the input . It is directly proprotional to the largest memory your program  acquores at any instance during run time. 
+space complexity of an algorithm quantiies the amount of the time taken by a program to run as a function of length of the input . It is directly proprotional to the largest memory your program  acquores at any instance during run time. 
 
 study cases of time complexity from book
 
@@ -128,3 +128,11 @@ Declaration = datatype_declaratioin arr[n][m];
 input : cin >> arr_name
 output : cout << arr_name
 to access perticular element: arr_name[index]
+
+## Pointers
+these are variable that store the address of other variables.
+
+## pointer arithmatic
+increment , decrement , addition , subtraction. 
+after incrementing/decrementing pointer it goes to next/prev menory location.
+ 
