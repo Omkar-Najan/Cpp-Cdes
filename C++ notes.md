@@ -136,3 +136,40 @@ these are variable that store the address of other variables.
 increment , decrement , addition , subtraction. 
 after incrementing/decrementing pointer it goes to next/prev menory location.
  
+
+## Stack and Heap
+### Stack Memory allocation 
+the memory is allocated on the function call stack. the memory gets deallocated as soon as the function call get over. deallocation is handled by compiler.
+
+### Heap memory allocation
+Allocation takes place on the pile of memory space available o programmers to allocated and deallocated. the programmer has to handle the deallocation.
+
+* Delete Operatior
+> to de-allocate memory P, we pass its address to delete() function
+```cpp
+// to de-allocate a memory,
+// pointed by pointer 'p'.
+delete(p)
+```
+* New Operator
+new operator is used to allocate a block of memory of the given data type. 
+```cpp
+// Syntax
+// mypointer = new <data_type>[size];
+int *p = new int[10];
+```
+* Dangling Pointer 
+in the memory location pointed by the pointer gets freed/deallocated, then the pointer is known as the Dangling Pointer. 
+
+## Strings 
+* no need to know size beforehand
+* Performing operations like concatenation and append is easier.
+* Terminate with special character '\0'.
+
+```cpp
+// use header file 'string' for using string funtions.
+string str;
+cin >> str;
+str1(5,'n'); // nnnnn
+str ="ValueWithoutSpace"; 
+```
