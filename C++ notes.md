@@ -173,3 +173,6 @@ cin >> str;
 str1(5,'n'); // nnnnn
 str ="ValueWithoutSpace"; 
 ```
+
+
+## Bit Manipulation
