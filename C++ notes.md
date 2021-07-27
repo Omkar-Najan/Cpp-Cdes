@@ -135,7 +135,7 @@ these are variable that store the address of other variables.
 ## pointer arithmatic
 increment , decrement , addition , subtraction. 
 after incrementing/decrementing pointer it goes to next/prev menory location.
- 
+
 
 ## Stack and Heap
 ### Stack Memory allocation 
@@ -174,5 +174,7 @@ str1(5,'n'); // nnnnn
 str ="ValueWithoutSpace"; 
 ```
 
+## BackTracking
+Backtracking is algorithmic technique  for solving recursive problems by trying to build every possible solution incremently and removing those solution that fail to satisfy constraints of the problems at any point in time.
 
-## Bit Manipulation
+
