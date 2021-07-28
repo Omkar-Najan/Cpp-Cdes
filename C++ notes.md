@@ -178,3 +178,25 @@ str ="ValueWithoutSpace";
 Backtracking is algorithmic technique  for solving recursive problems by trying to build every possible solution incremently and removing those solution that fail to satisfy constraints of the problems at any point in time.
 
 
+## Vectors and Pair
+Vectors are dynamic arrays.
+no need to allocate memory before hand in code.
+
+```text
+syntax to declare vector 
+vector<datatype> name;
+eg  vector<int> v;
+
+to add element to vector
+v.push_back(ele);
+
+```
+## Pair
+```cpp
+// pair <data_type1,data_type2> name;
+// eg. pair 
+pair <int,char> p;
+p.first = 3;
+p.second = 'f';
+```
+
