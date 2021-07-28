@@ -200,3 +200,13 @@ p.first = 3;
 p.second = 'f';
 ```
 
+## Count Sort 
+> 1. Find the count of every distinct element in array.
+> 2. Calculate the position of each element in sorted array.
+```text
+Time Complexity : O(n)
+only limited to small number of positive integers. 
+space Complexity: O(max(Arr));
+```
+
+## DNF Sort (Dutch National Flag Sort) 0,1,2 sort.
