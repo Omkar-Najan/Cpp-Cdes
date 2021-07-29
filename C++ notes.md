@@ -210,3 +210,59 @@ space Complexity: O(max(Arr));
 ```
 
 ## DNF Sort (Dutch National Flag Sort) 0,1,2 sort.
+> see code
+
+# OOP Concepts
+
+### Classes 
+```cpp
+// Class declaration
+class myClass{
+    //Class Data
+    string name;
+}
+```
+Classes have objects which have the same data type as defined in the class
+
+### Constructors in C++
+default constructor is invoked as sonn as clas objects are created.It can be parameteried as well.
+
+we have to specify default constructor if we make parameterized constructor.
+
+they can access both public and private members of class.
+```cpp
+student(){}// default constructor
+student(string s,int a,bool g){} // parameterized constructor.
+
+```
+
+### Copy constructor
+used to copy the class objects. we have to write copy contructor.
+```cpp
+student(student &a){
+    cout << "Copy Constructor"<< endl;
+    name = a.name;
+    age = a.age;
+}
+```
+
+### Destructors 
+invoked when object goes out of scope or destroyed by call to delete.
+```cpp
+~student(){}
+```
+
+### Getters Setters
+they  are public functions to get/set private data members of class.
+
+### Operator overloding
+we can overload operators to work in class objects.
+
+### Function Overloding
+functions having the same name but different definatoins. the invoked function would depend on arguments you pass to functions. 
+
+```cpp
+float area(int r){ return 3.141*r*r; }
+
+int area(int l,int r){ return l*r;}
+```
