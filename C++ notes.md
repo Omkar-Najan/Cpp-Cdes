@@ -266,3 +266,14 @@ float area(int r){ return 3.141*r*r; }
 
 int area(int l,int r){ return l*r;}
 ```
+
+<hr>
+
+## Linked List
+
+1. Size can be modified
+2. Non contiguous memory
+3. Isertion and deletion at any point is easier. 
+```text
+
+```
