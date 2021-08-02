@@ -1,1 +1,0 @@
-{"name":"Local: maxSubarray","url":"d:\\lectures\\C++ Aman Dhattarwal\\array\\subarrays\\maxSubarray.cpp","tests":[{"id":1622789121307,"input":"4\n-1 7 4 2","output":"13"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\lectures\\C++ Aman Dhattarwal\\array\\subarrays\\maxSubarray.cpp","group":"local","local":true}

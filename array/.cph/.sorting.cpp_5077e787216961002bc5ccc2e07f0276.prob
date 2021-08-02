@@ -1,1 +1,0 @@
-{"name":"Local: sorting","url":"d:\\lectures\\C++ Aman Dhattarwal\\array\\sorting.cpp","tests":[{"id":1622096559378,"input":"5\n4 5 1 2 6","output":"12456"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\lectures\\C++ Aman Dhattarwal\\array\\sorting.cpp","group":"local","local":true}
