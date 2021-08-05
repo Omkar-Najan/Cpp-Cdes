@@ -277,3 +277,30 @@ int area(int l,int r){ return l*r;}
 ```text
 
 ```
+<hr>
+
+## Stack
+stores a list of items can be added to or removed from list only at one end.
+
+Last in First Out Principle
+
+stack Operations
+1. push(x) -> pushes element in stack
+2. pop()   -> deletes element from stack
+3. top()   -> gives value of first element 
+4. empty() -> bool function checks if stack is empty or not.
+
+> time complexity of these operations is O(1).
+
+```text
+1. at start top = -1;
+2. At the time of pushing firstly increase top and then push value in stack.
+3. At time of pushing reduce top.  
+4. if top = -1, then stack is empty.
+```
+### Applications of Stack
+#### prefix,infix and postfix
+As computer doesn't know about BODMAS rule so we use prefix notation.
+also called  as polished notation.
+
+Postfix expresion - reverse polish notation

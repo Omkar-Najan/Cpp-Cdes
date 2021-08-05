@@ -18,7 +18,7 @@ int main(){
     for(int i = 0;i<N;i++){
         idx[i] = -1;
     }
-    int minidx = 999999;
+    int minidx = INT_MAX;
     
     for(int i = 0;i<n;i++){
         if(idx[a[i]] != -1){
@@ -29,7 +29,7 @@ int main(){
         }
     }
     
-    if(minidx == 999999){
+    if(minidx == INT_MAX){
         cout << "-1" << endl;
     }
     else{
