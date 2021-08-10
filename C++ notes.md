@@ -304,3 +304,22 @@ As computer doesn't know about BODMAS rule so we use prefix notation.
 also called  as polished notation.
 
 Postfix expresion - reverse polish notation
+
+
+
+## Queue 
+last in first out.
+implemented using array data structure.
+
+```text
+operations
+1. enqueue - similar to push operation
+2. dequeue - removes first element from queue.
+3. peek()  - gives value at front.  
+4. empty() - checks if queue is empty or not. 
+
+
+use 2 pointers. front and rear.
+initiate them with values -1. 
+
+```
