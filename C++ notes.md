@@ -201,16 +201,17 @@ p.second = 'f';
 ```
 
 ## Count Sort 
+<br>
+
 > 1. Find the count of every distinct element in array.
 > 2. Calculate the position of each element in sorted array.
+<br>
+
 ```text
 Time Complexity : O(n)
 only limited to small number of positive integers. 
 space Complexity: O(max(Arr));
 ```
-
-## DNF Sort (Dutch National Flag Sort) 0,1,2 sort.
-> see code
 
 # OOP Concepts
 
@@ -274,9 +275,7 @@ int area(int l,int r){ return l*r;}
 1. Size can be modified
 2. Non contiguous memory
 3. Isertion and deletion at any point is easier. 
-```text
 
-```
 <hr>
 
 ## Stack
@@ -306,6 +305,7 @@ also called  as polished notation.
 Postfix expresion - reverse polish notation
 
 
+<hr>
 
 ## Queue 
 last in first out.
@@ -322,4 +322,101 @@ operations
 use 2 pointers. front and rear.
 initiate them with values -1. 
 
+```
+<hr>
+
+## binary tree
+every node in binary tree can have atmost 2 children.
+
+A binary tree is a finite set of nodes that is either empty or consists of a 
+root and two disjoint binary trees called the left subtree and the right 
+subtree.
+* Properties
+1. Max nodes at lvl L  = 2^L
+2. Max nodes in tree of height H = 2^H - 1.
+3. Min number of levels for node N = log2(N+1).
+4. A binary tree with L leaves has at least log2(N+1) +1   levels. 
+5. parent node of ith node is i/2
+6. left chile of node is 2i if 2i<= n(total number of nodes)
+    a) if 2i > n then no left child for ith node.
+7. Right child of node i is node 2i+1 if 2i+1 is <=n
+    a) but if 2i+1 > n, node i has no right child. 
+
+### Tree traversals
+
+convension :- left must be visited before right node. 
+so three possible ways
+1. Inorder traversal.
+2. Postorder traversal.
+3. preorder traversal.
+
+
+* other 2 types are
+1. Breadth first
+2. Depth first
+
+<br>
+
+### Breadth First Traversal
+* All nodes at a given positins are visited first then nodes on the next lvl are visited.
+* Usually in a left to right fasion
+* this is implemented with a queue.
+
+<br>
+
+### Depth Traversal
+* All nodes at a given brach are visited before any other are visited.
+* there are 3 common depth first traversals.
+    * Inorder
+    * Preorder
+    * Postorder
+
+<br>
+
+1. PreOrder traversal
+    > Root ->
+    > Left subtree ->
+    > right subtree
+
+2. PostOrder Traversal
+ > left subtree ->
+ > Right Subtree ->
+ > Root
+
+3. Inorder Traversal
+> left subtree ->
+> Root ->
+> Right subtree
+
+<br>
+
+## Building of subtrees
+1. with PreOrder and Inorder
+```text
+Algorithm
+1. Pick an element from preorder and create a node.
+2. Increment preorder idx.
+3. Search for picked element's pos in inorder
+4. call to build left subtree from inorders 0 to pos-1
+5. call to build right subtree from inorders pos+1 to n
+6. return code
+```
+
+2. with PostOrder and Inorder
+```text
+Algorithm
+1. start from end of postorder and pick an element to creat a node
+2. decrement postorder idx
+3. search for picked elements pos in inorder
+4. call to build right subtree from pos+1 to n
+5. call to build left subtree from inorder 0 to pos-1
+6. return the node
+```
+
+3. we can not make tree from only preOrder and postOrder as there can be more than 1 formations of skewed tree with similar pre and post order traversals. 
+
+4. Level Order Traversal.
+use of queue for traversal.
+
+```text
 ```
