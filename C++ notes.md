@@ -420,3 +420,28 @@ use of queue for traversal.
 
 ```text
 ```
+
+<br>
+
+### Binary Search Trees
+
+1. Left subtree of a node contains only node with keys lesser than node's key
+2. right subtree of a node contains only nodes with keys greater than node's key.
+3. left and right subtree must also be BST. No duplicate nodes.
+
+searching in BST :- o(logn) n - nodes in tree.
+height of tree - log(n+1).
+
+## Catlan numbers
+
+<br>
+
+![alt text](https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-6e37684751c57a980ebaca5148b4736a_l3.svg)
+
+### Applications of Catalan numbers
+1. Possible BST.
+2. Parathensis/ basket combinations
+3. Possible forest
+4. possible ways to find path in matrix
+5. Dividing circles in N chords.
+6. Dyck words of given length etc.
