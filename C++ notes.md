@@ -445,3 +445,119 @@ height of tree - log(n+1).
 4. possible ways to find path in matrix
 5. Dividing circles in N chords.
 6. Dyck words of given length etc.
+
+<br>
+
+## Sets
+
+* Ordered Set
+1. Contains unique values.
+2. implemented using balanced BST.  
+3. Elements are in sorted ordered.
+4. random access is not possible.
+5. present in <set> header file.
+
+```cpp
+// insertion and print values of set.
+set<int> s;
+s.insert(1);
+s.insert(2);
+s.insert(3);
+s.insert(4);
+s.insert(5);
+// print elements in set
+for(auto i : s){
+    cout << i << " ";
+}
+for(auto i = s.begin() ; i != s.end; i++){
+    cout << *i << " ";
+}
+
+// print elements in reverse order
+for(auto i = s.rbegin(); i!= s.rend();i++){
+    cout << *i << " ";
+}
+// size of set
+cout << s.size();
+
+```
+* Custom operator
+```cpp
+// printing elements in asending or descendig order
+set<int , greater<int>> s;
+s.insert(1);
+s.insert(2);
+s.insert(3);
+
+// print element in the set.
+for(auto i:s){
+    cout << i << " ";
+}
+cout << endl; 
+//print element in descending order.
+```
+
+* Upper and lower bound
+```cpp
+set <int> s;
+s.insert(1);
+s.insert(2);
+s.insert(3);
+
+cout << *s.lower_bound(2) << endl;
+cout << *s.lower_bound(3) << endl;
+cout << *s.upper_bound(3) << endl;
+cout << (*s.upper_bound(5) == s.end() )<< endl;
+```
+
+* erase elemet in set.
+```cpp
+s.insert(1);
+s.insert(3);
+s.insert(2);
+s.insert(5);
+
+s.erase(2);
+s.erase(s.begin());
+```
+
+### Multiset
+
+1. can contain duplicates
+2. implemented using balanced BST
+3. Elements are in sorted order
+4. random access is not possible i.e. to get ith element in log(n) time period
+5. Present in #include<set> header file.
+
+```cpp
+// if we erase any element from multiset, every occurance of that element gets deleted.
+// if we want to delete only 1 element then do the following
+
+multiset<int> ms;
+ms.insert(1);
+ms.insert(2);
+ms.insert(3);
+ms.insert(3);
+ms.insert(3);
+ms.insert(3);
+
+ms.erase(ms.find(3)); // ms.find will give you the pointer tofirst occurance of 3 and that three will get deleted.
+
+```
+
+```text
+
+Time complexity of operations
+1. insertion : O(log N)
+2. Deletion : O(log N)
+3. Lower/Upper_bound : O(log N)
+4. print : O(NlogN);
+```
+
+
+* Unordered Set
+1. contains unique element only
+2. Implemented using hashing
+3. elements are not in sorted ordered.
+4. Random access is not possible.
+5. Present in #include<unordered_set> header file
