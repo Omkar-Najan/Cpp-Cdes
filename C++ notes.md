@@ -561,3 +561,29 @@ Time complexity of operations
 3. elements are not in sorted ordered.
 4. Random access is not possible.
 5. Present in #include<unordered_set> header file
+
+<br>
+
+### Heaps
+heap is binary tree based data structures. they are not necessarily Binary Search Tree.
+
+1. minHeap - root is smallest element.
+2. maxHeap - root is max element.
+
+* How to convert an array into a maxheap ?
+start adding an node to binary tree and check if current node is smaller than its root element. 
+if not then swap those node. (heapify).
+
+* how to pop element from heap.
+pop root ans then replace it with max element from remaining elements.
+
+
+### heap in STL
+1. MAXHEAP : priority-queue<int, vector<int>>.
+2. MINHEAP : priority-queue<int, vector<int> , greater<int>>
+
+* push - Log(N).
+* Pop - Log(N).
+* top - O(1).
+* size - O(1).
+
