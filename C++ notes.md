@@ -587,3 +587,55 @@ pop root ans then replace it with max element from remaining elements.
 * top - O(1).
 * size - O(1).
 
+<br>
+
+### Hashing
+
+why hashing ?
+sequential search requires o(n) comparisons. not useful for large database.
+binary search requires O(nlogN) but array should be sorted. 
+
+What is Hashing ?
+Record for the key value is directly referred by calculating address from key value
+* Address of element x is obtained by computing arithmetic function f(x).
+* Function f(x) is called as hash function
+* Table used for storing records is known as hash table
+* Best Case Time Complexity of hashing=O(1)
+* Worst Case Time Complexity =O(n)
+
+## collision
+* generation of same keys after hashing function.
+Collision handeling
+* seperate chaing  -> if collision, create a chain of values at same key using linked list. O(n).
+    Load factor-> n/b.
+
+* open Addressing -> if collision do probing.
+    using second argument called probe number in the hash function. probe number depends upon key, hence given by P(k).
+
+Linear Probing: P(K) = a*k+b
+
+Quadratic Probing: P(K) =  a*k<sup>2</sup> + b*k + c
+
+Double Hashing: P(k,x) = K*h<sub>2</sub>(X), h<sub>2</sub>(X) is secondery hashing function.
+
+hashing is implemented using ordered and unordered map.
+* Ordered Map
+1. Insertion : O(log(n))
+2. Accessing : O(log(n))
+3. deletion : O(logN)
+
+Implemented Using Red/Blck tree
+
+Key Value
+
+map<int,int>mp;
+
+* Unordered Map
+1. Insertion : O(1)
+2. Accessing : O(1)
+3. deletion : O(N)
+
+Implenented using Hash Tables.(basically array of Buckets)
+unordered_map<int,int> ump;
+
+
