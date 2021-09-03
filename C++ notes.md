@@ -638,4 +638,29 @@ map<int,int>mp;
 Implenented using Hash Tables.(basically array of Buckets)
 unordered_map<int,int> ump;
 
+<br>
 
+## Greedy Algorithm
+it works in phases. 
+1. at each phase take what is best without regard for future.
+2. hope by choosing local optimum at each step you will end up choosing global optimum.
+
+* used to solve problems that have n inputs and require us to obtain a subset that satisfies some constranits.
+* any subset that satisfied the constraints is called as a feasible solution
+* at each stage choose optimal solution.
+
+
+### Problems on Greedy Algorithm
+1. coin changing problem
+    an optimal solution to coin changing problem is the minimum number of coins whose total value equals a specific amount. for ex. min coins for 83 cent (IND mint)
+    Objective Function : Min number of coins returned.
+    Greedy Solution : Always return largest coin you can 
+
+* Approach
+    1. set removal =  initial_value
+    2. choose largest coin that is less than removal
+    3. add coin to set of coins and set removal = removal - coin_value.
+    4. repeat step 2 and 3 until reomoval = 0
+
+* Feasible solution : any subset of sol that satisfies problem
+* Optimal Solution : feasible sol that maximizes or minimizes objective function is called an optimal solution.
