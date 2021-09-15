@@ -664,3 +664,93 @@ it works in phases.
 
 * Feasible solution : any subset of sol that satisfies problem
 * Optimal Solution : feasible sol that maximizes or minimizes objective function is called an optimal solution.
+
+<br>
+
+## Graph Theory
+
+graph notation consist of 2 sets, set of vertices and edges.
+G(V,E) represents a graph.
+
+
+* Directed and Undirected graph
+pair of vertices in edge id unordered id undirected graph.
+
+edge of vertices is directed in directed graph.
+
+* Degree of vertex is number of edges *incident* to that vertex.
+for directed graph, in-degree of vertex v, number of edges that have v as head
+for undirected grapn, out-degree of vertex v, number of edges that have v as a tail
+
+Di is degree of a vertex i in a graph G with n vertices and e edges the number of edges is e  =  sumOf(di) / 2 (i fro 0 to n-1)
+
+* Adjecent and Incident
+1. if(v0 , v1) is an edge in an undirected graph, v0 and v1 are adjecent.
+edge(v0,v1) is incident on vertices v0 , v1.
+2. < v0, v1 > is an edge in a directed graph ,v0 is *adjacent to* v1 and v1 is *adjacent from* v0. edge < v0, v1 > is incident on v0 and v1.
+
+* Complete Graph
+a complete graph is a graph  that has max number of edges.
+1. for undirected graph with n vertices n(n-1)/2
+2. directed graph with n vertices, max number of edges is n(n-1).
+
+* subgraph and path
+1. A subugraph of G is a graph G' such that V(G') is a subset of V(G) and E(G') is a subset of E(G).
+2. A path from vertex V<sub>p</sub> to vertex V<sub>q</sub> in an graph G is a sequence of vertices, V<sub>p</sub>,V<sub>i1</sub>,V<sub>i2</sub>,...,V<sub>q</sub> such that (Vp vi1), (vi1,vi2) are edges in undirected gaph.
+3. Length of path is the number of dges on it.
+
+* Simple path and cycle.
+1. simple path : all vertices except first and last are distinct.
+2. two vertices are connected if there is a path in G from V0 and V1
+3. cycle is a simple path in which first and last vertices are the same.
+4. an undirected graph is connected if for every pair of distinct vertices there is path from vi to vj
+
+* Connected Component 
+1. A connected Componentof a undirected graph is a maximal connected subgraph
+2. tree is a graph that is connected ans acylic
+3. directed graph is strongly connected if there is a directed path vi to vj and also vj to vi.
+4. a strongly connected component is maximal subgraph that is strongly connected.
+
+* Graph Representation
+1. Adjacency Matrix.
+2. Adjacency List.
+
+* Adjancency matrix
+1. G(v,e) be graph with n vertices.
+2. Adjacency matrix of G is two dimensional N * N arraym 
+    * if edge exists between vi,vj is in E(G), adj_mat[i][j] = 1,
+    * if not then value is 0 at adj_mat[i][j] = 0.
+3. Adjacency matrix for an undireted graph is symmetric , directed graph's matrix need not be symmentric.
+
+for undirected graph, sum of 1 in row is degree of vertices.
+for directed graph, in-degree -> sum of rows.
+                    out-degree -> sum of col.
+
+* Adjacency list
+1. this is a array of linked lists where each node contains list of its adjcent nodes.
+2. degree of vertes in undirected graph : number of nodes in directed graph.
+3. no of edges in graph : O(n+e)
+4. Out Degree : no of nodes in its adj list
+5. in degree : traverse a whole Data Structure.
+
+
+* To traverse a graph 
+1. Depth First Search.
+2. Breadth First Search. (using Queue)
+
+
+### Topological Sort
+
+A topological ordering is an ordering of nodes in a directed graph where for each diercted edge from node A to node B, node A appears before node B in the ordering.
+
+they are not uique. (topological ordering is not Unique).
+Not every graph has topological sort.(eg. cyclic graph)
+Only<strong> directed Acylic graph (DAG) </strong> have a valid Topological sort.
+
+*Algorithm*
+1. while(all nodes are not visited){
+    nodes with zero indegree can be added to output array
+
+    all nodes which are adj to terminal nodes gets their indegree subtracted.
+    
+}

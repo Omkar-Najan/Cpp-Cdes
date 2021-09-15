@@ -49,7 +49,7 @@ int main(){
     cin >> w;
     sort(a.begin() , a.end() , compare);
 
-    int ans = 0;
+    float ans = 0;
     rep(i,0,n){
         if( w >= a[i].ss){
             ans = a[i].ff + ans;
