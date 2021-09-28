@@ -64,7 +64,7 @@ long long mergesort(int arr[],int l,int r){
 
 
 int main(){
-    int arr[] = {3,5,6,9,1,2,7,8};
+    int arr[] = {2,3,9,2,9};
     int n = sizeof(arr)/sizeof(arr[0]);
     cout << mergesort(arr,0,n-1);
     return 0;
