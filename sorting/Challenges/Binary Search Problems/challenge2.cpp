@@ -7,6 +7,7 @@ in such a way that maximum pages allocated to a student is minimum.
 */
 #include<iostream>
 #include <algorithm>
+#include<climits>
 using namespace std;
 
 /*
